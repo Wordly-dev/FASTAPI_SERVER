@@ -1,6 +1,6 @@
 from shared import SQLAlchemyRepository
-
-from models import Dictionary
+from database import Dictionary, session
 
 class DictionaryRepository(SQLAlchemyRepository):
     model = Dictionary
+    session = session

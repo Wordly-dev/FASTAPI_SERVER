@@ -9,6 +9,3 @@ class DictionaryDTO(DictionaryAddDTO):
 
 class DictionaryUpdateDTO(DictionaryAddDTO):
     name: str | None
-
-class DictionaryRelDTO(DictionaryDTO):
-    words: list["WordNestedDTO"]
