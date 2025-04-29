@@ -1,7 +1,7 @@
 from uuid import UUID
 from pydantic import BaseModel
 
-from utils.repository import AbstractRepository
+from shared.repository import AbstractRepository
 
 class Service:
     repository: AbstractRepository | None = None

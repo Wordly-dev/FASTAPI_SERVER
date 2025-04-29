@@ -1,6 +1,6 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-class Config(BaseSettings):
+class Settings(BaseSettings):
     DB_NAME: str
     DB_USER: str
     DB_PASSWORD: str
@@ -10,7 +10,9 @@ class Config(BaseSettings):
     @property
     def SYNC_DB_URL(self):
         return f"postgresql+psycopg://{self.DB_USER}:{self.DB_PASSWORD}@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
+    
+    @property
 
     model_config = SettingsConfigDict(env_file=".env")
 
-app_config = Config()
+settings = Settings()

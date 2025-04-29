@@ -1,4 +1,4 @@
-from utils import SQLAlchemyRepository
+from shared import SQLAlchemyRepository
 
 from models import Dictionary
 
