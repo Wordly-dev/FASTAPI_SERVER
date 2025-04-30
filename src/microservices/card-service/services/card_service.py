@@ -2,7 +2,7 @@ from uuid import UUID
 
 from repositories import CardRepository
 from schemas import CardDTO
-from shared import AbstractRepository, Service
+from shared import Service, AbstractRepository
 
 class CardService(Service):
     repository: AbstractRepository = CardRepository

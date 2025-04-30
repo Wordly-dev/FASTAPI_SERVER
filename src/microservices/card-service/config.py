@@ -12,6 +12,6 @@ class Settings(BaseSettings):
     def SYNC_DB_URL(self):
         return f"postgresql+psycopg://{self.DB_USER}:{self.DB_PASSWORD}@{self.DB_HOST}:{self.DB_PORT}/{self.DB_NAME}"
 
-    model_config = SettingsConfigDict(env_file=".env")
+    model_config = SettingsConfigDict(env_file="microservices/card-service/.env")
 
 settings = Settings()

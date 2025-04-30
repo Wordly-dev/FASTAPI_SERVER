@@ -4,7 +4,7 @@ from uuid import UUID
 from services import CardService
 from schemas import CardAddDTO, CardUpdateDTO
 
-router = APIRouter()
+router = APIRouter(prefix="/v1/api/users")
 card_service = CardService()
 
 @router.get("/")

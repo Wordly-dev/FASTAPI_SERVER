@@ -32,7 +32,7 @@ PyYAML==6.0.2
 rich==14.0.0
 rich-toolkit==0.14.3
 setuptools==80.0.1
--e git+https://github.com/Wordly-dev/FASTAPI_SERVER.git@6aed94ee4865ff304c7fefef486c6cd9fc17463e#egg=shared&subdirectory=shared
+-e git+https://github.com/Wordly-dev/FASTAPI_SERVER.git@e703401912f0fd90299ef26a625329b9b1eefc23#egg=shared&subdirectory=shared
 shellingham==1.5.4
 sniffio==1.3.1
 SQLAlchemy==2.0.40
